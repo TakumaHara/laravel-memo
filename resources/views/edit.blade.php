@@ -4,7 +4,8 @@
 @endsection
 @section('content')
 <div class="card">
-    <div class="card-header d-flex justify-content-between">メモ編集
+    <div class="card-header d-flex justify-content-between">
+        メモ編集
         <form id="delete-form" action="{{route('destroy')}}" method="POST">
             @csrf
             <input type="hidden" name="memo_id" value="{{$edit_memo[0]['id']}}"/>
